@@ -1,0 +1,775 @@
+$accordion-bg: rgba(255, 255, 255, 0.244);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar{
+    border-bottom: 2px solid black;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 950;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: .5rem 7rem 0 7rem;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background: #7bc6c99f;
+    background: linear-gradient(0deg, #7bc6c99f 0%, #f5a9b89f 25%, #ffffff9f 50%, #f5a9b89f 75%, #5bcecd9f 100%);
+    background-attachment: fixed;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(123,198,201,1) 0%, rgba(245,169,184,1) 25%, rgba(255,255,255,1) 50%, rgba(245,169,184,1) 75%, rgba(91,206,205,1) 100%);
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff4f;
+    border-radius: 0.5rem;
+    border-right: solid #ffffff00 2px;
+}
+nav{
+    .proyectosItem{
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 950;
+    }
+    .manuDesplegable{
+        background-color: rgb(234, 234, 234);
+    }
+}
+.mainInicio{
+    height: 70vh;
+    .imgTitulo{
+        border-bottom: 2px black solid;
+        padding: 7rem 0 2rem 0;
+        .imgMainIndex{
+            width: 100%;
+            padding-left: 4rem;
+        }
+        h1{
+            font-family: 'Vollkorn', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: .4rem;
+            padding-left: 5rem;
+        }
+    }
+    p{
+        text-align: left;
+        padding: 1.1rem 1.5rem 1.5rem 1.2rem;
+    }
+    .p1{
+        font-size: 1.22rem;
+        font-weight: 950;
+        border-right: 2px black solid;
+    }
+    .p2{
+        font-size: 1.05rem;
+        font-weight: 600;
+    } 
+}
+
+
+/*NOSOTROS*/
+.nosotros{
+    margin-bottom: 4rem;
+    .introduccion{
+        margin-bottom: 4rem;
+        .integEquipo{
+            .equipo{
+                border-bottom: 2px black solid;
+                padding-left: 4rem;
+                margin-top: 3rem;
+                .tituloEquipo{
+                    font-family: 'Vollkorn', serif;
+                    font-size: 2rem;
+                    padding-top: 8.5rem;
+                }
+                .txtInteg{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+            .unidadEj{
+                border-bottom: 2px black solid;
+                padding-left: 4rem;
+                margin-top: 2rem;
+                .tituloUnidEj{
+                    font-family: 'Vollkorn', serif;
+                    font-size: 2rem;
+                    padding-top: 4rem;
+                }
+                .txtUnidadEj{
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .bgAcordion{
+        background: none;
+    }
+    .nombreEquipo{
+        font-family: 'Vollkorn', serif;
+        font-size: 1.15rem;
+    }
+}
+
+/*PROYECTOS*/
+.docencia{
+    border-bottom: 2px solid black;
+    .tituloDocencia{
+        font-family: 'Vollkorn', serif;
+        font-size: 2.2rem;
+        padding: 3rem 3rem .5rem 3rem;
+    }
+    .introduccionDocencia{
+        border-bottom: 2px solid black;
+        .txtDocencia1{
+            font-size: 1.2rem;
+        }
+        ul{
+            list-style-type: none;
+        }
+    }
+    .tituloPrograma{
+        font-family: 'Vollkorn', serif;
+        font-size: 1.5rem;
+    }
+    .btnPrograma{
+        padding: .3rem;
+        width: 30%;
+        margin-left: 10%;
+        border-radius: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+    } 
+    .clases{
+        background-image: url(../img/img-manoBandera.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 2rem;
+        .tituloClases{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.5rem;
+            padding: 3rem 0 0 3rem;
+        }
+        .clasesCharlas{
+            padding: 5rem;
+            .subTituloClases{
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+            .btnClases{
+                padding: .3rem;
+                width: 30%;
+                margin-left: 10%;
+                border-radius: 10px;
+                margin: .5rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    } 
+    
+}
+.investigacion{
+    border-bottom: 2px solid black;
+    .tituloInvest{
+        font-family: 'Vollkorn', serif;
+        font-size: 2.2rem;
+        padding: 3rem 3rem .5rem 3rem;
+    }
+    .tituloInvest2{
+        font-family: 'Vollkorn', serif;
+        font-size: 1.9rem;
+        padding: 1rem 3rem .5rem 3rem;
+    }
+    .txtProyectoInvest{
+        background-color: #ffffff4f;
+        .pProyectoInvest{
+            font-size: 1.1rem;
+        }
+    }
+    .producciones{
+        background-color: #ffffff4f;
+        .tituloProducciones{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.6rem;
+        }
+        .btnProd{
+            padding: .3rem;
+            width: 80%;
+            margin-left: 10%;
+            border-radius: 5px;
+            margin: .5rem;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+.extension{
+    .tituloExt{
+        font-family: 'Vollkorn', serif;
+        font-size: 2.2rem;
+        padding: 3rem 3rem .5rem 3rem;
+    }
+    .subTituloExt{
+        font-family: 'Vollkorn', serif;
+        font-size: 1.9rem;
+        padding: 1rem 3rem .5rem 3rem;
+    }
+    .txtProyectoExt{
+        background-color: #ffffff4f;
+        .subTituloExt2{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.9rem;
+            padding: 3rem 3rem .5rem 3rem;
+        }
+        img{
+            padding: 1rem 0 1rem 0;
+        }
+        .pProyectoExt{
+            font-size: 1.1rem;
+        }
+    }
+    .imagenesExt{
+        padding: 5rem;
+        .imgExt{
+            padding: 2rem;
+        }
+    }
+}
+
+
+/*INTERACTIVO*/
+.mapa{
+    border-bottom: 2px solid black;
+    .intodMapa{
+        .tituloMapa{
+            font-family: 'Vollkorn', serif;
+            font-size: 2.2rem;
+            text-align: right;
+        }
+        .txtMapa{
+            font-size: 1rem;
+            padding: 0 2rem;
+        }
+    }
+}
+.entrevistas{
+    .tituloEntrev{
+        font-family: 'Vollkorn', serif;
+        font-size: 2.2rem;
+        padding: 3rem 3rem .5rem 3rem;
+    }
+    .entrev1{
+        border-bottom: 1px solid black;
+        .introEntrev{
+            padding: 2rem;
+            .txtEntrev{
+                padding: 0 2rem;
+                .subTituloEntrev{
+                    font-family: 'Vollkorn', serif;
+                    font-size: 2rem;
+                }
+                .pEntrev{
+                    font-size: 1rem;
+                }
+            }
+            .iframeEntrev{
+                margin-left: 5rem;
+            }
+        }
+    }
+}
+.entrev2{
+    border-bottom: 1px solid black;
+    .introEntrev{
+        padding: 2rem;
+        .txtEntrev{
+            padding: 0 2rem;
+            .subTituloEntrev{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+            }
+            .pEntrev{
+                font-size: 1rem;
+            }
+        }
+        .iframeEntrev{
+            margin-left: 5rem;
+        }
+    }
+}
+.entrev3{
+    border-bottom: 1px solid black;
+    .introEntrev{
+        padding: 2rem;
+        .txtEntrev{
+            padding: 0 2rem;
+            .subTituloEntrev{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+            }
+            .pEntrev{
+                font-size: 1rem;
+            }
+        }
+        .iframeEntrev{
+            margin-left: 5rem;
+        }
+    }
+}
+.entrev4{
+    margin-bottom: 2rem;
+    .introEntrev{
+        padding: 2rem;
+        .txtEntrev{
+            padding: 0 2rem;
+            .subTituloEntrev{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+            }
+            .pEntrev{
+                font-size: 1rem;
+            }
+        }
+        .iframeEntrev{
+            margin-left: 5rem;
+        }
+    }
+}
+
+
+
+/*FOOTER*/
+footer{
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "mensajeFinal direccion" "mensajeFinal redesSociales" "barraFooter barraFooter";
+    padding: 1rem 2rem 1rem 2rem;
+    .mensajeFinal{
+        grid-area: mensajeFinal;
+        border-right: 1px solid black;
+        padding-top: 1rem;
+        
+        .tituloGralFooter{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.4rem;
+            padding-left: 1.3rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: .5rem 1.2rem;
+            li {
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+        .txtGral{
+            font-size: 1rem;
+        }
+    }
+    .direccion{
+        grid-area: direccion;
+        padding: 1rem 0 0 4rem;
+        .tituloListasFooter{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.3rem;
+        }
+        .ubicacion {
+            list-style-type: none;
+            padding: .5rem 0 .5rem 0;
+            li {
+                display: inline-block;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+    }
+    .redesSociales{
+        grid-area: redesSociales;
+        padding-left: 4rem;
+        .tituloListasFooter{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.3rem;
+        }
+        .redes {
+            list-style-type: none;
+            padding: .5rem 0 0 0;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    display: inline-block;
+                    margin: 0 5px;
+                    color: black;
+                }
+            }
+        }
+    }
+    .barraFooter{
+        grid-area: barraFooter;
+        font-size: .8rem;
+        text-align: center;
+        padding-top: .5rem;
+        border-top: 1px solid black;
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    body{
+        padding: .5rem ;
+    }
+    .mainInicio{
+        .imgTitulo{
+            padding: 1rem;
+            .imgMainIndex{
+                width: 100%;
+                padding: 0 1rem 1rem 2rem;
+            }
+            h1{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }
+        p{
+            text-align: left;
+            padding: 1.1rem 1.5rem 1.5rem 1.2rem;
+        }
+        .p1{
+            font-size: 1.05rem;
+            border-right: none;
+            border-bottom: 2px black solid;
+        }
+        .p2{
+            font-size: 1rem;
+        } 
+        .img-fluid{
+            width: 100%;
+            margin-top: 200rem;
+        }
+        
+    }
+
+    /*NOSOTROS*/
+    .nosotros{
+        .introduccion{
+            .integEquipo{
+                .equipo{
+                    padding-left: 2rem;
+                    margin-top: 0;
+                    .tituloEquipo{
+                        padding-top: 1rem;
+                    }
+                }
+                .unidadEj{
+                    padding-left: 2rem;
+                    margin-top: 0;
+                    .tituloUnidEj{
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*PROYECTOS*/
+    .docencia{
+        width: 100%;
+        .tituloDocencia{
+            font-family: 'Vollkorn', serif;
+            font-size: 2.2rem;
+            padding: 1rem 0 0 2rem;
+        }
+        .introduccionDocencia{
+            border-bottom: 2px solid black;
+            .txtDocencia1{
+                font-size: 1.2rem;
+            }
+            .txtDocencia{
+                font-size: 1.2rem;
+                margin-top: -5rem;
+            }
+        }
+        .tituloPrograma{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.5rem;
+        }
+        .btnPrograma{
+            padding: .3rem;
+            width: 50%;
+            margin-left: 10%;
+            border-radius: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.2rem;
+            }
+        } 
+        .clases{
+            background-image: url();
+            background-color: #ffffff4f;
+            margin: 2rem;
+            .tituloClases{
+                font-family: 'Vollkorn', serif;
+                font-size: 1.5rem;
+                padding: 1rem 0 0 1rem;
+            }
+            .clasesCharlas{
+                padding: 2rem;
+                .btnClases{
+                    width: 100%;
+                }
+            }
+        } 
+        
+    }
+    .investigacion{
+        width: 100%;
+        border-bottom: 2px solid black;
+        .tituloInvest{
+            font-family: 'Vollkorn', serif;
+            font-size: 2.2rem;
+            padding: 3rem 3rem .5rem 3rem;
+        }
+        .tituloInvest2{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.9rem;
+            padding: 1rem 3rem .5rem 3rem;
+        }
+        .txtProyectoInvest{
+            background-color: #ffffff4f;
+            .pProyectoInvest{
+                font-size: 1.1rem;
+            }
+        }
+        .producciones{
+            background-color: #ffffff4f;
+            .tituloProducciones{
+                font-family: 'Vollkorn', serif;
+                font-size: 1.6rem;
+            }
+            iframe{
+                width: 100%;
+                height: 200px;
+            }
+            .btnProd{
+                padding: .3rem;
+                width: 100%;
+                margin-left: 10%;
+                border-radius: 5px;
+                margin: .5rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    .extension{
+        width: 100%;
+        .tituloExt{
+            font-family: 'Vollkorn', serif;
+            font-size: 2.2rem;
+            padding: 3rem 3rem .5rem 3rem;
+        }
+        .subTituloExt{
+            font-family: 'Vollkorn', serif;
+            font-size: 1.9rem;
+            padding: 1rem 3rem .5rem 3rem;
+        }
+        .txtProyectoExt{
+            background-color: #ffffff4f;
+            .subTituloExt2{
+                font-family: 'Vollkorn', serif;
+                font-size: 1.9rem;
+                padding: 3rem 3rem .5rem 3rem;
+            }
+            img{
+                padding: 1rem 0 1rem 0;
+            }
+            .pProyectoExt{
+                font-size: 1.1rem;
+            }
+        }
+        .imagenesExt{
+            padding: 0;
+            .imgExt{
+                padding: 2rem;
+            }
+        }
+    }
+
+    /*INTERACTIVO*/
+.mapa{
+    .intodMapa{
+        .tituloMapa{
+            font-family: 'Vollkorn', serif;
+            font-size: 2.2rem;
+            text-align: left;
+        }
+        .txtMapa{
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+}
+.entrevistas{
+    .tituloEntrev{
+        font-family: 'Vollkorn', serif;
+        font-size: 2.2rem;
+        padding: 2rem 0 .5rem 2rem;
+    }
+    .entrev1{
+        border-bottom: 1px solid black;
+        .introEntrev{
+            padding: 2rem;
+            .iframeEntrev{
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+.entrev2{
+    border-bottom: 1px solid black;
+    .introEntrev{
+        padding: 2rem;
+        .txtEntrev{
+            padding: 0 2rem;
+            .subTituloEntrev{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+            }
+            .pEntrev{
+                font-size: 1rem;
+            }
+        }
+        .iframeEntrev{
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+.entrev3{
+    border-bottom: 1px solid black;
+    .introEntrev{
+        padding: 2rem;
+        .txtEntrev{
+            padding: 0 2rem;
+            .subTituloEntrev{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+            }
+            .pEntrev{
+                font-size: 1rem;
+            }
+        }
+        .iframeEntrev{
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+.entrev4{
+    margin-bottom: 2rem;
+    .introEntrev{
+        padding: 2rem;
+        .txtEntrev{
+            padding: 0 2rem;
+            .subTituloEntrev{
+                font-family: 'Vollkorn', serif;
+                font-size: 2rem;
+            }
+            .pEntrev{
+                font-size: 1rem;
+            }
+        }
+        .iframeEntrev{
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+    /*FOOTER*/
+    footer{
+        // margin-top: 30rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "mensajeFinal mensajeFinal" "direccion direccion" "redesSociales redesSociales" "barraFooter barraFooter";
+        padding: 1rem 2rem 1rem 2rem;
+        .mensajeFinal{
+            border-right: none;
+            text-align: center;
+            .tituloGralFooter{
+                padding-left: 0;
+            }
+            ul {
+                padding: 0;
+            }
+            .txtGral{
+                font-size: 1rem;
+            }
+        }
+        .direccion{
+            padding: 0;
+            text-align: center;
+            .ubicacion {
+                padding:0;
+            }
+        }
+        .redesSociales{
+            padding-left: 0;
+            text-align: center;
+            .redes {
+                padding: 0;
+                li {
+                    display: inline-block;
+                    a {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .barraFooter{
+            grid-area: barraFooter;
+            font-size: .8rem;
+            text-align: center;
+            padding-top: .5rem;
+            border-top: 1px solid black;
+            margin-top: 1rem;
+        }
+    }
+}
