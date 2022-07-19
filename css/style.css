@@ -10961,6 +10961,13 @@ nav .manuDesplegable {
   font-size: 1.05rem;
   font-weight: 600;
 }
+.mainInicio .imgInicio {
+  position: relative;
+}
+.mainInicio .img-fluid {
+  position: absolute;
+  top: 20rem;
+}
 
 /*NOSOTROS*/
 .nosotros {
@@ -11317,6 +11324,264 @@ footer .barraFooter {
 }
 
 @media screen and (max-width: 992px) {
+  body {
+    padding: 1.5rem;
+  }
+  .mainInicio .imgTitulo {
+    padding: 1rem;
+  }
+  .mainInicio .imgTitulo .imgMainIndex {
+    width: 100%;
+    padding: 0 1rem 1rem 2rem;
+  }
+  .mainInicio .imgTitulo h1, .mainInicio .imgTitulo .h1 {
+    font-family: "Vollkorn", serif;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .mainInicio p {
+    text-align: left;
+    padding: 1.1rem 1.5rem 1.5rem 1.2rem;
+  }
+  .mainInicio .p1 {
+    font-size: 1.05rem;
+    border-right: none;
+    border-bottom: 2px black solid;
+  }
+  .mainInicio .p2 {
+    font-size: 1rem;
+  }
+  .mainInicio .imgInicio {
+    visibility: hidden;
+  }
+  /*NOSOTROS*/
+  .nosotros .introduccion .integEquipo .equipo {
+    padding-left: 2rem;
+    margin-top: 0;
+  }
+  .nosotros .introduccion .integEquipo .equipo .tituloEquipo {
+    padding-top: 1rem;
+  }
+  .nosotros .introduccion .integEquipo .unidadEj {
+    padding-left: 2rem;
+    margin-top: 0;
+  }
+  .nosotros .introduccion .integEquipo .unidadEj .tituloUnidEj {
+    padding-top: 1rem;
+  }
+  .docencia {
+    width: 100%;
+  }
+  .docencia .tituloDocencia {
+    font-family: "Vollkorn", serif;
+    font-size: 2.2rem;
+    padding: 1rem 0 0 2rem;
+  }
+  .docencia .introduccionDocencia {
+    border-bottom: 2px solid black;
+  }
+  .docencia .introduccionDocencia .txtDocencia1 {
+    font-size: 1.2rem;
+  }
+  .docencia .introduccionDocencia .txtDocencia {
+    font-size: 1.2rem;
+    margin-top: -5rem;
+  }
+  .docencia .tituloPrograma {
+    font-family: "Vollkorn", serif;
+    font-size: 1.5rem;
+  }
+  .docencia .btnPrograma {
+    padding: 0.3rem;
+    width: 50%;
+    margin-left: 10%;
+    border-radius: 10px;
+  }
+  .docencia .btnPrograma a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  .docencia .clases {
+    background-image: url();
+    background-color: rgba(255, 255, 255, 0.3098039216);
+    margin: 2rem;
+  }
+  .docencia .clases .tituloClases {
+    font-family: "Vollkorn", serif;
+    font-size: 1.5rem;
+    padding: 1rem 0 0 1rem;
+  }
+  .docencia .clases .clasesCharlas {
+    padding: 2rem;
+  }
+  .docencia .clases .clasesCharlas .btnClases {
+    width: 100%;
+  }
+  .investigacion {
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
+  .investigacion .tituloInvest {
+    font-family: "Vollkorn", serif;
+    font-size: 2.2rem;
+    padding: 3rem 3rem 0.5rem 3rem;
+  }
+  .investigacion .tituloInvest2 {
+    font-family: "Vollkorn", serif;
+    font-size: 1.9rem;
+    padding: 1rem 3rem 0.5rem 3rem;
+  }
+  .investigacion .txtProyectoInvest {
+    background-color: rgba(255, 255, 255, 0.3098039216);
+  }
+  .investigacion .txtProyectoInvest .pProyectoInvest {
+    font-size: 1.1rem;
+  }
+  .investigacion .producciones {
+    background-color: rgba(255, 255, 255, 0.3098039216);
+  }
+  .investigacion .producciones .tituloProducciones {
+    font-family: "Vollkorn", serif;
+    font-size: 1.6rem;
+  }
+  .investigacion .producciones iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .investigacion .producciones .btnProd {
+    padding: 0.3rem;
+    width: 100%;
+    margin-left: 10%;
+    border-radius: 5px;
+    margin: 0.5rem;
+  }
+  .investigacion .producciones .btnProd a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+  }
+  .extension {
+    width: 100%;
+  }
+  .extension .tituloExt {
+    font-family: "Vollkorn", serif;
+    font-size: 2.2rem;
+    padding: 3rem 3rem 0.5rem 3rem;
+  }
+  .extension .subTituloExt {
+    font-family: "Vollkorn", serif;
+    font-size: 1.9rem;
+    padding: 1rem 3rem 0.5rem 3rem;
+  }
+  .extension .txtProyectoExt {
+    background-color: rgba(255, 255, 255, 0.3098039216);
+  }
+  .extension .txtProyectoExt .subTituloExt2 {
+    font-family: "Vollkorn", serif;
+    font-size: 1.9rem;
+    padding: 3rem 3rem 0.5rem 3rem;
+  }
+  .extension .txtProyectoExt img {
+    padding: 1rem 0 1rem 0;
+  }
+  .extension .txtProyectoExt .pProyectoExt {
+    font-size: 1.1rem;
+  }
+  .extension .imagenesExt {
+    padding: 0;
+  }
+  .extension .imagenesExt .imgExt {
+    padding: 2rem;
+  }
+  /*INTERACTIVO*/
+  .mapa .intodMapa .tituloMapa {
+    font-family: "Vollkorn", serif;
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  .mapa .intodMapa .txtMapa {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .mapa iframe {
+    width: 100%;
+  }
+  .entrevistas .tituloEntrev {
+    font-family: "Vollkorn", serif;
+    font-size: 2.2rem;
+    padding: 2rem 0 0.5rem 2rem;
+  }
+  .entrevistas .entrev1 {
+    border-bottom: 1px solid black;
+  }
+  .entrevistas .entrev1 .introEntrev {
+    padding: 2rem;
+  }
+  .entrevistas .entrev1 .introEntrev .iframeEntrev {
+    margin-left: 0;
+    width: 100%;
+  }
+  .entrev2 {
+    border-bottom: 1px solid black;
+  }
+  .entrev2 .introEntrev {
+    padding: 2rem;
+  }
+  .entrev2 .introEntrev .txtEntrev {
+    padding: 0 2rem;
+  }
+  .entrev2 .introEntrev .txtEntrev .subTituloEntrev {
+    font-family: "Vollkorn", serif;
+    font-size: 2rem;
+  }
+  .entrev2 .introEntrev .txtEntrev .pEntrev {
+    font-size: 1rem;
+  }
+  .entrev2 .introEntrev .iframeEntrev {
+    margin-left: 0;
+    width: 100%;
+  }
+  .entrev3 {
+    border-bottom: 1px solid black;
+  }
+  .entrev3 .introEntrev {
+    padding: 2rem;
+  }
+  .entrev3 .introEntrev .txtEntrev {
+    padding: 0 2rem;
+  }
+  .entrev3 .introEntrev .txtEntrev .subTituloEntrev {
+    font-family: "Vollkorn", serif;
+    font-size: 2rem;
+  }
+  .entrev3 .introEntrev .txtEntrev .pEntrev {
+    font-size: 1rem;
+  }
+  .entrev3 .introEntrev .iframeEntrev {
+    margin-left: 0;
+    width: 100%;
+  }
+  .entrev4 {
+    margin-bottom: 2rem;
+  }
+  .entrev4 .introEntrev {
+    padding: 2rem;
+  }
+  .entrev4 .introEntrev .txtEntrev {
+    padding: 0 2rem;
+  }
+  .entrev4 .introEntrev .txtEntrev .subTituloEntrev {
+    font-family: "Vollkorn", serif;
+    font-size: 2rem;
+  }
+  .entrev4 .introEntrev .txtEntrev .pEntrev {
+    font-size: 1rem;
+  }
+  .entrev4 .introEntrev .iframeEntrev {
+    margin-left: 0;
+    width: 100%;
+  }
   /*FOOTER*/
   footer {
     grid-template-columns: repeat(2, 1fr);
